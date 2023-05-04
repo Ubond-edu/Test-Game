@@ -1,1 +1,79 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#timer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Set the background color and font color */
+tw-story {
+  background-color: #f4f1de; /* Soft beige background */
+  color: #333; /* Dark grey font color */
+}
+
+/* Add a subtle texture pattern */
+tw-story::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Optional: Add some padding around the passages */
+tw-passage {
+  padding: 20px;
+}
+
+tw-dialog {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+tw-dialog tw-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+tw-dialog tw-prompt {
+  font-size: 1em;
+  color: #333;
+}
+
+tw-dialog input[type='text'] {
+  font-size: 1em;
+  border: 1px solid #333;
+  padding: 5px;
+  color: #333;
+}
+
+tw-dialog button {
+  font-size: 1em;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+tw-dialog button:hover {
+  background-color: #333;
+}
 
